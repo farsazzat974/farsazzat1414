@@ -1,4 +1,5 @@
 
+
 repeat wait() until game:IsLoaded()
 
 local Players = game:GetService("Players")
@@ -395,7 +396,7 @@ end
 
 
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "farsazzat HubLogin"
+ScreenGui.Name = "Farsazzat HubLogin"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -466,7 +467,7 @@ SideIndicatorCorner.Parent = SideIndicator
 local TitleLabel = Instance.new("TextLabel")
 TitleLabel.Name = "title"
 TitleLabel.FontFace = Font.new("rbxassetid://12187361378", Enum.FontWeight.Medium, Enum.FontStyle.Normal)
-TitleLabel.Text = "farsazzat Hub"
+TitleLabel.Text = "FarsazzatHub"
 TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TitleLabel.TextSize = 19
 TitleLabel.BackgroundTransparency = 1
@@ -729,6 +730,7 @@ DiscordButton.BorderSizePixel = 0
 DiscordButton.Position = UDim2.fromOffset(0, 100)
 DiscordButton.Size = UDim2.new(1, 0, 0, 40)
 DiscordButton.Parent = ButtonsSection
+
 local DiscordCorner = Instance.new("UICorner")
 DiscordCorner.CornerRadius = UDim.new(0, 6)
 DiscordCorner.Parent = DiscordButton
@@ -736,7 +738,7 @@ DiscordCorner.Parent = DiscordButton
 local FooterLabel = Instance.new("TextLabel")
 FooterLabel.Name = "FooterLabel"
 FooterLabel.FontFace = Font.new("rbxassetid://12187365364")
-FooterLabel.Text = "farsazzat Hub © 2025 | All rights reserved"
+FooterLabel.Text = "FarsazzatHub © 2025 | All rights reserved"
 FooterLabel.TextColor3 = Color3.fromRGB(120, 120, 120)
 FooterLabel.TextSize = 12
 FooterLabel.BackgroundTransparency = 1
@@ -813,7 +815,7 @@ CheckButton.MouseButton1Click:Connect(function()
     if not isGameSupported() then
         StatusLabel.Text = "Key Status: Game Not Supported"
         StatusLabel.TextColor3 = Color3.fromRGB(255, 85, 85) 
-        createNotification("Error", "This game is not supported by farsazzat Hub.", 5, Color3.fromRGB(255, 85, 85), ScreenGui)
+        createNotification("Error", "This game is not supported by FarsazzatHub.", 5, Color3.fromRGB(255, 85, 85), ScreenGui)
         return
     end
     
@@ -931,12 +933,12 @@ CheckButton.MouseButton1Click:Connect(function()
 end)
 
 LinkvertiseButton.MouseButton1Click:Connect(function()
-    setclipboard("https://ouo.io/pDQ8kdV")
+    setclipboard("https://shrinkme.ink/2fM6SV")
     createNotification("Copied", "Linkvertise link copied to clipboard!", 5, Color3.fromRGB(255, 188, 254), ScreenGui)
 end)
 
 LootlabsButton.MouseButton1Click:Connect(function()
-    setclipboard("https://ouo.io/pRizCSH")
+    setclipboard("https://shrinkme.ink/UYNEj")
     createNotification("Copied", "Lootlabs link copied to clipboard!", 5, Color3.fromRGB(255, 188, 254), ScreenGui)
 end)
 
@@ -964,7 +966,7 @@ MinimizeButton.MouseButton1Click:Connect(function()
     
     local RestoreButton = Instance.new("TextButton")
     RestoreButton.Name = "RestoreButton"
-    RestoreButton.Text = "farsazzat Hub"
+    RestoreButton.Text = "FarsazzatHub"
     RestoreButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     RestoreButton.TextSize = 14
     RestoreButton.Font = Enum.Font.Gotham
@@ -989,9 +991,9 @@ if not isGameSupported() then
     GameLabel.Text = "Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .. " (Not Supported)"
     GameLabel.TextColor3 = Color3.fromRGB(255, 85, 85)
     
-    createNotification("Warning", "This game is not currently supported by farsazzat Hub.", 5, Color3.fromRGB(255, 170, 0), ScreenGui)
+    createNotification("Warning", "This game is not currently supported by FarsazzatHub.", 5, Color3.fromRGB(255, 170, 0), ScreenGui)
 end
 
-createNotification("farsazzat Hub", "Welcome to farsazzat Hub! Please enter your key to continue.", 5, Color3.fromRGB(255, 188, 254), ScreenGui)
+createNotification("Farsazzat Hub", "Welcome to Farsazzat Hub! Please enter your key to continue.", 5, Color3.fromRGB(255, 188, 254), ScreenGui)
 
 MainFrame.Visible = true
